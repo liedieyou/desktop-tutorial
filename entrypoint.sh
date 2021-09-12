@@ -1,2 +1,2 @@
 #!/bin/sh
-$acme.sh --issue --test --standalone -d $DOMAIN --alpn
+acme.sh --issue --test --standalone -d $DOMAIN --alpn
