@@ -1,4 +1,4 @@
-FROM teddysun/xray
+FROM neilpang/acme.sh
 
 ADD entrypoint.sh /opt/entrypoint.sh
 
