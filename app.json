@@ -1,1 +1,6 @@
-
+{
+    "name": "acme",
+    "description": "ssl",
+    "keywords": ["acme", "ssl"],
+    "stack": "container"
+}
