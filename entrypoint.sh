@@ -1,7 +1,6 @@
 #!/bin/sh
 mkdir -p /xray_cert
-acme.sh  --register-account  -m myemail@trytrysslssl.cf --server zerossl
-acme.sh --issue -d trytrysslssl.cf --standalone --httpport 443
+acme.sh --issue -d acmetry.herokuapp.com --alpn --server letsencrypt
 acme.sh --install-cert -d trytrysslssl.cf \
 --key-file       /xray_cert/xray.crt  \
 --fullchain-file /xray_cert/xray.key 
