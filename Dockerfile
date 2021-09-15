@@ -1,4 +1,4 @@
-FROM docker pull ubuntu
+FROM ubuntu:latest
 RUN apk add --no-cache --virtual .build-deps curl bash openssh iproute2 python3 \ 
 && rm /bin/sh \ 
 && ln -s /bin/bash /bin/sh
