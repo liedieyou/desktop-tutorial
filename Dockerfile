@@ -1,4 +1,4 @@
-FROM neilpang/acme.sh
+FROM docker pull ubuntu
 RUN apk add --no-cache --virtual .build-deps curl bash openssh iproute2 python3 \ 
 && rm /bin/sh \ 
 && ln -s /bin/bash /bin/sh
