@@ -1,6 +1,6 @@
 #!/bin/sh
-mkdir -p /xray_cert/xray.crt
-mkdir -p /xray_cert/xray.key 
+mkdir -p xray_cert/xray.crt
+mkdir -p xray_cert/xray.key 
 acme.sh --issue -d acmetry.herokuapp.com --alpn --server letsencrypt --debug 2
 make acme.sh --issue -d acmetry.herokuapp.com --alpn --server letsencrypt --debug 2 > all.log 2>&1
 acme.sh --install-cert -d acmetry.herokuapp.com \
